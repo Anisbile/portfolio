@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Portfolio</a>
+        <div class="toggle"></div>
+        <ul>
+            <li><a href="#home">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            
+            <li><a href="https://www.linkedin.com/in/anis-bile-baaa49216/">LinkedIn</a></li>
+            <li><a href="https://github.com/Anisbile">Github</a></li>
+        </ul>
+    </header>
+    <section class="banner">
+        <div class="textBx">
+            <h2>Welcome, My name is<br><span>Anis Bile.</span></h2>
+            <h3>I'm a Software Engineer</h3>
+            <a href="#home" class="btn">About Me</a>
+        </div>
+    </section>
+    <section class="about" id="home">
+        <div class="heading">
+            <h2>About Me</h2>
+        </div>
+        <div class="content">
+            <div class="contentBx">
+                <h3>I am a Software Engineer.</h3>
+                <p>I am proud to be a graduate of the December 2021 General Assembly Software Engineer cohort. I have learn a lot from my time at General Assembly and I plan on continuing my learning in the field of Software Engineering. I learned languages like HTML, CSS, Javascript, React, Python, Django, and many more. I am going to showcase my projects from the cohort. </p>
+            </div>
+            <div class="w50">
+                <img src="IMG_2100.jpg" >
+            </div>
+        </div>
+    </section>
+    <br>
+    <section class="projects" id="projects">
+        <div class="heading">
+            <h2>My Projects</h2>
+        </div>
+        <div class="content">
+            <div class="projectsBx">
+                <img src="screenshot-1.png">
+                <a href="https://github.com/Anisbile/NBA-Players" class="btn-2">Open Github</a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="projectsBx">
+                <img src="screenshot 2 por.png">
+                <a href="https://github.com/Anisbile/Store-frontend" class="btn-2">Open Github</a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="projectsBx">
+                <img src="ScreenShot2-1.png">
+                <a href="https://github.com/spencerblanden/junto" class="btn-2">Open Github</a>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="heading">
+            <h2>Contact Me</h2>
+        </div>
+            <div class="contactInfoBx">
+                <div class="icon"></div>
+                <div class="text"></div>
+                <h3>Phone</h3>
+                <p>612-351-7830</p>
+            </div>
+            <div class="contactInfoBx">
+                <div class="icon"></div>
+                <div class="text"></div>
+                <h3>Email</h3>
+                <p>anisbile6@gmail.com</p>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+    </script>
+</body>
+</html>
