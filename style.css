@@ -13,12 +13,13 @@ section {
 .banner {
     position: relative;
     min-height: 100vh;
-    background: url(portfolio.jpeg);
+    background: black;
     background-size: cover;
     background-position: right;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: #fff;
 }
 .banner h2 {
     font-size: 3em;
@@ -68,14 +69,21 @@ header {
     justify-content: space-around;
     align-items: center;
     transition: 0.5s;
+    
 }
 header.sticky {
     background: #fff;
     padding: 20px 100px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
-header .logo {
+header.sticky ul li a {
     color: black;
+}
+header.sticky .logo {
+    color: black;
+}
+header .logo {
+    color: #fff;
     font-size: 24px;
     text-transform: uppercase;
     text-decoration: none;
@@ -94,8 +102,8 @@ header ul li a {
     position: relative;
     display: inline-block;
     margin: 0 15px;
-    color: black;
     text-decoration: none;
+    color: #fff;
 }
 .heading {
     width: 100%;
